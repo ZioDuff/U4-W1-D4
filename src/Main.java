@@ -30,8 +30,11 @@ public class Main {
             System.out.println("questo è lo stipendio della matricola " + arrDipendenti[i].get_id() + " ed è " + arrDipendenti[i].calculateSalary(28));
         }
 
-        Volontario noe =  new Volontario()
+        Volontario noe = new Volontario("noe", 99);
 
-        CheckIn[] tuttiALavorare ={}
+        CheckIn[] tuttiALavorare = {jacopo, noe, giovanni, gesu};
+        for (int i = 0; i < tuttiALavorare.length; i++) {
+            tuttiALavorare[i].checkIn();
+        }
     }
 }
